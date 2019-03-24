@@ -1,7 +1,7 @@
 # ChimeraOS
 A VM with OS.JS, OwnCloud, Open Source Social Network and TheLounge installed as Tor Hidden Services
 
-# Version and Hidden Service Descriptor:
+### Version and Hidden Service Descriptor:
 
 jpsgwuzgyhgcl2uyj7o232wwnfoydpgct5atzoqdmp3pkzxkwm2fo4id.onion
 
