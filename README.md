@@ -67,4 +67,4 @@ The Client is a simple zip file with Tor Browser Bundle, you can inspect every s
 I hope you like this!
 
 
-Enjoy! :)
+# Enjoy the most open and secure (and usable with no pain!) platform in the world! :)
