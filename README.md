@@ -1,6 +1,14 @@
 # ChimeraOS
 A VM with OS.JS, OwnCloud, Open Source Social Network and TheLounge installed as Tor Hidden Services
 
+Available in Docker:
+
+### docker pull alessandrofiori/torworld-template
+
+Docker Environment Hidden Service and Descriptor:
+
+rnismere4xh5s5cihxb754dqsedmxivooc6ksv5hfdz3ctlayphfmoyd.onion
+
 ### Version and Hidden Service Descriptor:
 
 jpsgwuzgyhgcl2uyj7o232wwnfoydpgct5atzoqdmp3pkzxkwm2fo4id.onion
