@@ -7,7 +7,7 @@ Available in Docker:
 
 Docker Environment Hidden Service and Descriptor:
 
-rnismere4xh5s5cihxb754dqsedmxivooc6ksv5hfdz3ctlayphfmoyd.onion
+znul6f3qd6rbnix3mawz7zscgx5bh6spja4ugx7jolu2mwxul66ycxqd.onion
 
 ### Version and Hidden Service Descriptor:
 
