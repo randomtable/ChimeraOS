@@ -16,8 +16,9 @@ RUN npm update --prefix /OS.js/
 RUN npm install --production @osjs/example-application --prefix /OS.js/
 RUN npm run package:discover --prefix /OS.js/
 RUN npm run build --prefix /OS.js/
-RUN sudo apt install tasksel -y
-RUN sudo tasksel install lamp-server
+RUN sudo apt-get install apache2 -y
+RUN sudo apt-get install mysql -y
+RUN sudo apt-get install php -y
 RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 80 127.0.0.1:80" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 8000 127.0.0.1:8000" >> /etc/tor/torrc
@@ -25,4 +26,4 @@ RUN echo "HiddenServicePort 9000 127.0.0.1:9000" >> /etc/tor/torrc
 RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
 RUN tor --runasdaemon 1
 RUN cat /var/lib/tor/hidden_service/hostname
-ENTRYPOINT cat /var/lib/tor/hidden_service/hostname & tor
+ENTRYPOINT /etc/init.d/apache2 start & /etc/init.d/mysql start & cat /var/lib/tor/hidden_service/hostname & tor
