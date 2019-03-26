@@ -23,4 +23,4 @@ RUN echo "HiddenServicePort 9000 127.0.0.1:9000" >> /etc/tor/torrc
 RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
 RUN tor --runasdaemon 1
 RUN cat /var/lib/tor/hidden_service/hostname
-ENTRYPOINT tor --runasdaemon 1 & cat /var/lib/tor/hidden_service/hostname & npm run serve --prefix /OS.js/
+ENTRYPOINT npm run serve --prefix /OS.js/ & tor --runasdaemon 1 & cat /var/lib/tor/hidden_service/hostname
