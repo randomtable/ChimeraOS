@@ -17,7 +17,7 @@ RUN npm install --production @osjs/example-application --prefix /OS.js/
 RUN npm run package:discover --prefix /OS.js/
 RUN npm run build --prefix /OS.js/
 RUN curl -sL https://github.com/thelounge/thelounge/releases/download/v3.0.1/thelounge_3.0.1-1_all.deb --output thelounge.deb
-RUN sudo apt-get install yarn
+RUN sudo apt-get install yarn -y
 RUN yarn global add thelounge
 RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 8000 127.0.0.1:8000" >> /etc/tor/torrc
