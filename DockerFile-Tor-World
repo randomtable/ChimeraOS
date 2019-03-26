@@ -17,8 +17,9 @@ RUN npm install --production @osjs/example-application --prefix /OS.js/
 RUN npm run package:discover --prefix /OS.js/
 RUN npm run build --prefix /OS.js/
 RUN sudo apt-get install apache2 -y
-RUN sudo apt-get install mysql -y
+RUN sudo apt-get install mysql-server -y
 RUN sudo apt-get install php -y
+RUN sudo apt-get install phpmyadmin -y
 RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 80 127.0.0.1:80" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 8000 127.0.0.1:8000" >> /etc/tor/torrc
