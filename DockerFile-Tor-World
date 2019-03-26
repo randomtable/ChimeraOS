@@ -18,6 +18,7 @@ RUN npm run package:discover --prefix /OS.js/
 RUN npm run build --prefix /OS.js/
 RUN sudo apt install tasksel -y
 RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
+RUN echo "HiddenServicePort 80 127.0.0.1:80" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 8000 127.0.0.1:8000" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 9000 127.0.0.1:9000" >> /etc/tor/torrc
 RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
