@@ -11,4 +11,4 @@ Very soon, i will release in the sections, the use of images and explain them fo
 
 # Section 1: Tor-Relay
 ## Link to the image: https://hub.docker.com/r/alessandrofiori/tor-relay
-### Docker command to pull the image: docker pull alessandrofiori/tor-relay
+### Docker command to pull the image: "docker pull alessandrofiori/tor-relay"
