@@ -26,3 +26,18 @@ This image is derived from the official ubuntu image.
 In this image you can find the ubuntu base packages, the Tor package, and a modified torrc file for enable an Exit Relay.
 
 #### How to use this image?
+
+The simplest way to use this image is pulling it from Docker Hub, using the script "tor-relay-starter.bat"
+
+The script will pull the image, create a container for it and run immediatly a Relay.
+
+The full script:
+
+docker pull alessandrofiori/tor-relay
+
+docker create alessandrofiori/tor-relay:latest
+
+docker run alessandrofiori/tor-relay:latest
+
+You can also use the Dockerfile to build your own image.
+
