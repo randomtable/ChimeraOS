@@ -1,0 +1,28 @@
+FROM ubuntu:rolling
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install sudo -y
+RUN sudo apt-get install tor -y
+RUN sed -i 's/#ORPort 9001/ORPort 9001/' /etc/tor/torrc
+RUN sed -i 's/#Nickname ididnteditheconfig/Nickname torrelay/' /etc/tor/torrc
+EXPOSE 9001
+RUN sudo apt-get install curl software-properties-common -y
+RUN curl -sL https://deb.nodesource.com/setup_11.x | sudo -E bash -
+RUN sudo apt-get install nodejs -y
+RUN sudo apt-get install git -y
+RUN git clone -b v3 --single-branch https://github.com/os-js/OS.js.git
+RUN npm install --prefix /OS.js/
+RUN npm audit fix --prefix /OS.js/
+RUN npm update --prefix /OS.js/
+RUN npm install --production @osjs/example-application --prefix /OS.js/
+RUN npm run package:discover --prefix /OS.js/
+RUN npm run build --prefix /OS.js/
+RUN sudo apt-get install apache2 -y
+RUN sudo apt-get install mysql-server -y
+RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
+RUN echo "HiddenServicePort 80 127.0.0.1:80" >> /etc/tor/torrc
+RUN echo "HiddenServicePort 8000 127.0.0.1:8000" >> /etc/tor/torrc
+RUN echo "HiddenServicePort 9000 127.0.0.1:9000" >> /etc/tor/torrc
+RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
+RUN tor --runasdaemon 1
+RUN cat /var/lib/tor/hidden_service/hostname
+ENTRYPOINT /etc/init.d/apache2 start & /etc/init.d/mysql start & cat /var/lib/tor/hidden_service/hostname & tor
