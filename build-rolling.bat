@@ -1,6 +1,7 @@
 :start
 DEL /F /Q /A "%~dp0image.txt"
 DEL /F /Q /A "%~dp0container.txt"
+docker system prune -a -f
 docker build https://raw.githubusercontent.com/randomtable/ChimeraOS/master/DockerFile-Tor-Relay --iidfile "%~dp0image.txt"
 SET /P iid=<"%~dp0image.txt"
 SET iid=%iid:sha256:=%
@@ -21,5 +22,5 @@ SET /P ciid=<"%~dp0container.txt"
 docker commit %ciid% alessandrofiori/torworld-template:latest
 docker login
 docker push alessandrofiori/torworld-template:latest
-TIMEOUT /T 300 /NOBREAK
+TIMEOUT /T 777 /NOBREAK
 GOTO start
