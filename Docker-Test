@@ -5,4 +5,4 @@ RUN sudo apt-get install tor -y
 RUN sed -i 's/#ORPort 9001/ORPort 9001/' /etc/tor/torrc
 RUN sed -i 's/#Nickname ididnteditheconfig/Nickname torrelay/' /etc/tor/torrc
 EXPOSE 9001
-RUN sudo apt-get install lamp-server -y
+RUN sudo apt-get install lamp-server^ -y
