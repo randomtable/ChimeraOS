@@ -6,7 +6,6 @@ RUN sed -i 's/#ORPort 9001/ORPort 9001/' /etc/tor/torrc
 RUN sed -i 's/#Nickname ididnteditheconfig/Nickname torrelay/' /etc/tor/torrc
 EXPOSE 9001
 FROM httpd:2.4
-COPY ./public-html/ /usr/local/apache2/htdocs/
 FROM php:7.2-cli
 COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
