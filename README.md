@@ -55,17 +55,16 @@ In this image you can find the ubuntu base packages, the Tor package, a modified
 
 #### How to use this image?
 
-The simplest way to use this image is pulling it from Docker Hub, using the script "tor-relay-starter.bat"
+The simplest way to use this image is pulling it from Docker Hub, using the script "torworld-starter.bat"
 
-The script will pull the image, create a container for it and run immediatly a Relay.
+The script will pull the image, create a container for it and run immediatly an entire ubuntu system with Tor Hidden Service, an Exit Relay (because of this, i have named this image "template"), an Apache + PHP + MySQL instance.
 
 The full script:
 
-docker pull alessandrofiori/tor-relay
+docker pull alessandrofiori/torworld-template
 
-docker create alessandrofiori/tor-relay:latest
+docker create alessandrofiori/torworld-template:latest
 
-docker run alessandrofiori/tor-relay:latest
+docker run alessandrofiori/torworld-template:latest
 
-You can also use the Dockerfile to build your own image.
-
+#### You can also use the Dockerfile to build your own image.
