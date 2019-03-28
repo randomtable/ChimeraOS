@@ -39,5 +39,33 @@ docker create alessandrofiori/tor-relay:latest
 
 docker run alessandrofiori/tor-relay:latest
 
+#### You can also use the Dockerfile to build your own image.
+
+# Section 2: Tor-World (ChimeraOS)
+## Link to the image: https://hub.docker.com/r/alessandrofiori/torworld-template
+### Docker command to pull the image: "docker pull alessandrofiori/torworld-template"
+
+This image is intended for who want to deploy a complete solution with Hidden Service, Relay (decide the "scope"), a web server and MySQL.
+
+#### What's in this image?
+
+This image is derived from the official ubuntu image.
+
+In this image you can find the ubuntu base packages, the Tor package, a modified torrc file with configurations, a XAMPP installation with Apache, PHP and MySQL.
+
+#### How to use this image?
+
+The simplest way to use this image is pulling it from Docker Hub, using the script "tor-relay-starter.bat"
+
+The script will pull the image, create a container for it and run immediatly a Relay.
+
+The full script:
+
+docker pull alessandrofiori/tor-relay
+
+docker create alessandrofiori/tor-relay:latest
+
+docker run alessandrofiori/tor-relay:latest
+
 You can also use the Dockerfile to build your own image.
 
