@@ -5,4 +5,7 @@ RUN sudo apt-get install tor -y
 RUN sed -i 's/#ORPort 9001/ORPort 9001/' /etc/tor/torrc
 RUN sed -i 's/#Nickname ididnteditheconfig/Nickname torrelay/' /etc/tor/torrc
 EXPOSE 9001
-RUN sudo apt-get install ubuntu-server^
+RUN sudo apt-get install curl software-properties-common -y
+RUN curl -sL https://www.apachefriends.org/xampp-files/7.3.3/xampp-linux-x64-7.3.3-1-installer.run --output xampp.run
+RUN chmod +x ./xampp.run
+RUN ./xampp.run
