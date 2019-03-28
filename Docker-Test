@@ -12,4 +12,5 @@ COPY . /usr/src/myapp
 WORKDIR /usr/src/myapp
 CMD [ "php", "./your-script.php" ]
 FROM mysql:latest
+FROM phpmyadmin/phpmyadmin:latest
 ENTRYPOINT /bin/bash
