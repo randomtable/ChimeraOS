@@ -26,4 +26,4 @@ RUN echo "HiddenServicePort 9000 127.0.0.1:9000" >> /etc/tor/torrc
 RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
 RUN tor --runasdaemon 1
 RUN cat /var/lib/tor/hidden_service/hostname
-ENTRYPOINT /etc/init.d/apache2 start & /etc/init.d/mysql start & cat /var/lib/tor/hidden_service/hostname & tor
+ENTRYPOINT /opt/lampp/ctlscript.sh start & cat /var/lib/tor/hidden_service/hostname & tor
