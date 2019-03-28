@@ -9,3 +9,4 @@ RUN sudo apt-get install curl software-properties-common -y
 RUN curl -sL https://www.apachefriends.org/xampp-files/7.3.3/xampp-linux-x64-7.3.3-1-installer.run --output xampp.run
 RUN chmod +x ./xampp.run
 RUN ./xampp.run
+ENTRYPOINT /opt/lampp/ctlscript.sh start & tor
