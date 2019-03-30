@@ -55,19 +55,17 @@ In this image you can find the ubuntu base packages, the Tor package, and a modi
 
 #### How to use this image?
 
-The simplest way to use this image is pulling it from Docker Hub, using the script "tor-relay-starter.bat"
+The simplest way to use this image is pulling it from Docker Hub, using the script "tor-middle-relay-starter.bat"
 
 The script will pull the image, create a container for it and run immediatly a Relay.
 
 The full script:
 
-docker pull alessandrofiori/tor-relay
+docker pull alessandrofiori/tor-non-exit-relay
+docker create alessandrofiori/tor-non-exit-relay:latest
+docker run alessandrofiori/tor-non-exit-relay:latest
 
-docker create alessandrofiori/tor-relay:latest
-
-docker run alessandrofiori/tor-relay:latest
-
-#### You can also use the Dockerfile to build your own image.
+#### You can also use the Dockerfile to build your own image (you can see the configuration is essentially a Tor Relay configuration with command for uncomment the line "ExitRelay 0".
 
 
 # Section 2: Tor-World (ChimeraOS)
