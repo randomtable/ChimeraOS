@@ -41,6 +41,35 @@ docker run alessandrofiori/tor-relay:latest
 
 #### You can also use the Dockerfile to build your own image.
 
+# Tor-Non-Exit-Relay
+## Link to the image: https://hub.docker.com/r/alessandrofiori/tor-non-exit-relay
+### Docker command to pull the image: "docker pull alessandrofiori/tor-non-exit-relay"
+
+This image is intended for who want to run a Tor Non-Exit Relay easily.
+
+#### What's in this image?
+
+This image is derived from the official ubuntu image.
+
+In this image you can find the ubuntu base packages, the Tor package, and a modified torrc file for enable a Non-Exit Relay.
+
+#### How to use this image?
+
+The simplest way to use this image is pulling it from Docker Hub, using the script "tor-relay-starter.bat"
+
+The script will pull the image, create a container for it and run immediatly a Relay.
+
+The full script:
+
+docker pull alessandrofiori/tor-relay
+
+docker create alessandrofiori/tor-relay:latest
+
+docker run alessandrofiori/tor-relay:latest
+
+#### You can also use the Dockerfile to build your own image.
+
+
 # Section 2: Tor-World (ChimeraOS)
 ## Link to the image: https://hub.docker.com/r/alessandrofiori/torworld-template
 ### Docker command to pull the image: "docker pull alessandrofiori/torworld-template"
