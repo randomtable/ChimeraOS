@@ -62,7 +62,9 @@ The script will pull the image, create a container for it and run immediatly a R
 The full script:
 
 docker pull alessandrofiori/tor-non-exit-relay
+
 docker create alessandrofiori/tor-non-exit-relay:latest
+
 docker run alessandrofiori/tor-non-exit-relay:latest
 
 #### You can also use the Dockerfile to build your own image (you can see the configuration is essentially a Tor Relay configuration with command for uncomment the line "ExitRelay 0".
