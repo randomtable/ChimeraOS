@@ -37,7 +37,7 @@ docker pull alessandrofiori/tor-relay
 
 docker create alessandrofiori/tor-relay:latest
 
-docker run alessandrofiori/tor-relay:latest
+docker run -p 9001:9001 alessandrofiori/tor-relay:latest
 
 #### You can also use the Dockerfile to build your own image.
 
@@ -65,7 +65,7 @@ docker pull alessandrofiori/tor-non-exit-relay
 
 docker create alessandrofiori/tor-non-exit-relay:latest
 
-docker run alessandrofiori/tor-non-exit-relay:latest
+docker run -p 9001:9001 alessandrofiori/tor-non-exit-relay:latest
 
 #### You can also use the Dockerfile to build your own image (you can see the configuration is essentially a Tor Relay configuration with command for uncomment the line "ExitRelay 0".
 
