@@ -21,5 +21,5 @@ RUN echo "ServerTransportListenAddr obfs4 0.0.0.0:9004" >> /etc/tor/torrc
 RUN echo "ExtORPort auto" >> /etc/tor/torrc
 RUN echo "ContactInfo torworld" >> /etc/tor/torrc
 RUN echo "Nickname torworld" >> /etc/tor/torrc
-EXPOSE 9004
+EXPOSE 9003
 ENTRYPOINT tor
