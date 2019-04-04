@@ -17,3 +17,6 @@ tor
 
 #### Or try the pre-configured VM (this VM is an example. Please delete all Tor configurations and folders before use it definitively)
 https://github.com/randomtable/ChimeraOS/raw/master/VMs/Tor-Relay.ova
+
+Username: ubuntu
+Password: ubuntu
