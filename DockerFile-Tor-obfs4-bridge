@@ -16,7 +16,7 @@ RUN echo "#Bridge config" >> /etc/tor/torrc
 RUN echo "RunAsDaemon 0" >> /etc/tor/torrc
 RUN echo "ORPort 9003" >> /etc/tor/torrc
 RUN echo "BridgeRelay 1" >> /etc/tor/torrc
-RUN echo "ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy --managed" >> /etc/tor/torrc
+RUN echo "ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy" >> /etc/tor/torrc
 RUN echo "ServerTransportListenAddr obfs4 0.0.0.0:9004" >> /etc/tor/torrc
 RUN echo "ExtORPort auto" >> /etc/tor/torrc
 RUN echo "ContactInfo torworld" >> /etc/tor/torrc
