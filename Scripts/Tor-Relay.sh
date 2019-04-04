@@ -8,4 +8,3 @@ apt update
 apt install -y tor deb.torproject.org-keyring
 sed -i 's/#ORPort 9001/ORPort 9001/' /etc/tor/torrc
 sed -i 's/#Nickname ididnteditheconfig/Nickname torrelay/' /etc/tor/torrc
-tor
