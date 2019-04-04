@@ -21,5 +21,7 @@ RUN echo "ServerTransportListenAddr obfs4 0.0.0.0:9004" >> /etc/tor/torrc
 RUN echo "ExtORPort auto" >> /etc/tor/torrc
 RUN echo "ContactInfo torworld" >> /etc/tor/torrc
 RUN echo "Nickname torworld" >> /etc/tor/torrc
+RUN tor --runasdaemon 1
+RUN cat /var/lib/tor/pt_state/obfs4_bridgeline.txt
 EXPOSE 9003 9004
-ENTRYPOINT tor
+ENTRYPOINT cat /var/lib/tor/pt_state/obfs4_bridgeline.txt & tor
