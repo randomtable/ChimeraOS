@@ -22,6 +22,6 @@ RUN echo "ExtORPort auto" >> /etc/tor/torrc
 RUN echo "ContactInfo torworld" >> /etc/tor/torrc
 RUN echo "Nickname torworld" >> /etc/tor/torrc
 RUN tor --runasdaemon 1
-RUN cat /var/lib/tor/pt_state/obfs4_bridgeline.txt
+RUN cat /etc/tor/pt_state/obfs4_bridgeline.txt
 EXPOSE 9003 9004
-ENTRYPOINT cat /var/lib/tor/pt_state/obfs4_bridgeline.txt & tor
+ENTRYPOINT cat /etc/tor/pt_state/obfs4_bridgeline.txt & tor
