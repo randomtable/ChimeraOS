@@ -6,6 +6,9 @@ sudo apt-get install curl -y
 #### Download the script
 curl https://raw.githubusercontent.com/randomtable/ChimeraOS/master/Scripts/Tor-Relay.sh --output Tor-Relay.sh
 
+Other script:
+https://raw.githubusercontent.com/randomtable/ChimeraOS/master/Scripts/Tor-Obfs4-Bridge.sh
+
 #### Set execution permissions:
 chmod +x ./Tor-Relay.sh
 
