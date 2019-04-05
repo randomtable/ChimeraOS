@@ -97,3 +97,17 @@ docker create alessandrofiori/torworld-template:latest
 docker run alessandrofiori/torworld-template:latest
 
 #### You can also use the Dockerfile to build your own image.
+
+# Section 3: Tor-Relay (Script + VM)
+## Link to the image: https://github.com/randomtable/ChimeraOS/blob/master/VMs/Tor-Relay.ova
+### Script to replicate on your system: https://github.com/randomtable/ChimeraOS/blob/master/Scripts/Tor-Relay.sh
+
+This script + image, is intended for who want to run a Tor middle relay.
+
+#### What's in this image?
+
+This image contains a Ubuntu Command Line Installation from minimal ISO, and the latest Tor package from deb.torproject.org.
+
+#### How to use this image?
+
+The simplest way to use this image is download the OVA file and import in Virtualbox or run the script on your Ubuntu System.
