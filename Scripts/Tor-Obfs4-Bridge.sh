@@ -15,5 +15,5 @@ echo "ServerTransportPlugin obfs4 exec /usr/bin/obfs4proxy" >> /etc/tor/torrc
 echo "ServerTransportListenAddr obfs4 0.0.0.0:9003" >> /etc/tor/torrc
 echo "ExtORPort auto" >> /etc/tor/torrc
 echo "ContactInfo torworld" >> /etc/tor/torrc
-echo "Nickname pick-a-nickname" >> /etc/tor/torrc
+echo "Nickname torworld" >> /etc/tor/torrc
 systemctl stop tor
