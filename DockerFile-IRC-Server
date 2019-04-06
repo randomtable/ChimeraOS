@@ -13,7 +13,7 @@ RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
 RUN echo "HiddenServicePort 9090 127.0.0.1:9090" >> /etc/tor/torrc
 RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
 RUN sudo apt-get install inspircd -y
-RUN sudo apt-get install python python-pip python-openssl openjdk-8-jre-headless git
+RUN sudo apt-get install python python-pip python-openssl openjdk-8-jre-headless git -y
 RUN git clone https://github.com/qwebirc/qwebirc.git qwebirc
 RUN pip install -r /qwebirc/requirements.txt
 RUN cp /qwebirc/config.py.example /qwebirc/config.py
