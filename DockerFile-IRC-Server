@@ -18,7 +18,8 @@ RUN git clone https://github.com/qwebirc/qwebirc.git qwebirc
 RUN pip install -r /qwebirc/requirements.txt
 RUN cp /qwebirc/config.py.example /qwebirc/config.py
 RUN sed -i 's/IRCSERVER, IRCPORT = "irc.myserver.com", 6667/IRCSERVER, IRCPORT = "127.0.0.1", 6667/' /qwebirc/config.py
-RUN cd qwebirc
+RUN ln -s qwebirc ~/qwebirc
+RUN cd ~/qwebirc
 RUN chmod +x compile.py
 RUN python compile.py
 RUN chmod +x run.py
