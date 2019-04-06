@@ -15,12 +15,7 @@ RUN echo "HiddenServiceVersion 3" >> /etc/tor/torrc
 RUN sudo apt-get install inspircd -y
 RUN sudo apt-get install python python-pip python-openssl openjdk-8-jre-headless git -y
 RUN git clone https://github.com/qwebirc/qwebirc.git
-RUN cd qwebirc
-RUN pip install -r . requirements.txt
-RUN cp . config.py.example . config.py
-RUN sed -i 's/IRCSERVER, IRCPORT = "irc.myserver.com", 6667/IRCSERVER, IRCPORT = "127.0.0.1", 6667/' . config.py
-RUN python . compile.py
-RUN python . run.py
+RUN cd qwebirc && pip install -r requirements.txt && cp config.py.example config.py && sed -i 's/IRCSERVER, IRCPORT = "irc.myserver.com", 6667/IRCSERVER, IRCPORT = "127.0.0.1", 6667/' config.py && python compile.py && python run.py
 RUN tor --runasdaemon 1
 RUN cat /var/lib/tor/hidden_service/hostname
 ENTRYPOINT python /qwebirc/run.py & tor
