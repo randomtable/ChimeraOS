@@ -67,7 +67,7 @@ If a group of people want to stay connected and create a robust network, have to
 
 When all pieces are in place, the clients can access the multiple nodes of the sub-network, in base of which server has published its descriptor.
 
-### This project aims to make easier for users to deploy their own Tor Relays and Tor Hidden Services with Docker.
+### Below section aims to make easier for users to deploy their own Tor Relays and Tor Hidden Services with Docker.
 
 In the first section, i will explain the Tor Relay image, how to use and how to run easily your first Tor Relay.
 The second section is dedicated to run your hidden service with released images of the OS (formerly the ChimeraOS).
