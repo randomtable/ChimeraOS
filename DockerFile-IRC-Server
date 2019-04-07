@@ -21,4 +21,4 @@ RUN sudo apt-get install yarn -y
 RUN npm install --global --unsafe-perm thelounge
 RUN tor --runasdaemon 1
 RUN cat /var/lib/tor/hidden_service/hostname
-ENTRYPOINT cat /var/lib/tor/hidden_service/hostname & thelounge start & inspircd start --nolog & tor
+ENTRYPOINT cat /var/lib/tor/hidden_service/hostname & thelounge start & inspircd start --nolog --runasroot & tor
