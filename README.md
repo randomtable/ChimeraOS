@@ -1,7 +1,7 @@
 # Welcome to my project!
 
 ### Section 0: Project - Distributed IRC Server (starting Hidden Communication Protocol Project)
-##### This Section is a draft and all theory, please open an issue if there is errors or discussion!
+##### This Section is a draft and all theory, please open an issue if there is errors or you have ideas!
 
 If you want to sustain me in this project, soon i will publish a donation link.
 
