@@ -1,6 +1,6 @@
 FROM ubuntu:rolling
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install sudo -y
+RUN apt-get install sudo curl -y
 RUN sudo rm /etc/apt/sources.list
 RUN echo "deb [trusted=yes] http://http.kali.org/kali kali-rolling main non-free contrib" >> /etc/apt/sources.list
 RUN apt-get update && apt-get upgrade -y
