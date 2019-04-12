@@ -1,5 +1,5 @@
 FROM kalilinux/kali-linux-docker
 RUN apt-get update && apt-get dist-upgrade -y
-RUN apt-get install git live-build cdebootstrap -y
+RUN apt-get install git live-build cdebootstrap curl -y
 RUN git clone git://git.kali.org/live-build-config.git
 RUN cd live-build-config && ./build.sh --distribution kali-rolling --verbose
