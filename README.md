@@ -1,4 +1,5 @@
 # Welcome to my project!
+##### In the "ISO" folder, you will find a script for build and update your Windows Subsystem for Linux installation of Kali Linux!
 
 ### Section 0: Project - Distributed IRC Server (starting Hidden Communication Protocol Project)
 ##### This Section is a draft and all theory, please open an issue if there is errors or you have ideas!
