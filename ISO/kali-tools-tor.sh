@@ -6,4 +6,4 @@ sh xfce4.sh -y
 adduser user
 apt-get install armitage zaproxy -y
 git clone https://github.com/ericpaulbishop/iptables_torify.git
-cd iptables_torify && chmod +x debian_install.sh && ./debian_install.sh
+cd iptables_torify && chmod +x debian_install.sh && ./debian_install.sh -y
