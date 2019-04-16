@@ -1,0 +1,9 @@
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\bin\Debug\Nuke.exe
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\bin\Debug\Nuke.pdb
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\bin\Debug\Nuke.xml
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Debug\Nuke.vbproj.GenerateResource.Cache
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Debug\Nuke.exe
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Debug\Nuke.xml
+C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Debug\Nuke.pdb
