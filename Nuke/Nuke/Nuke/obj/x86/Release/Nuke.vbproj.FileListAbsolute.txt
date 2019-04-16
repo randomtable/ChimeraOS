@@ -7,3 +7,12 @@ C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.vbproj.GenerateResou
 C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.exe
 C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.xml
 C:\Users\a\Desktop\TEMP\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.pdb
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.exe
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.xml
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.pdb
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\bin\Release\Nuke.exe
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\bin\Release\Nuke.pdb
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\bin\Release\Nuke.xml
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\obj\x86\Release\WindowsApplication1.Form1.resources
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\obj\x86\Release\WindowsApplication1.Resources.resources
+C:\Users\a\Downloads\ChimeraOS-master\Nuke\Nuke\Nuke\obj\x86\Release\Nuke.vbproj.GenerateResource.Cache

