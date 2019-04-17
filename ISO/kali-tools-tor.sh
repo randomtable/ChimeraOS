@@ -4,6 +4,4 @@ cat xfce4.sh
 sh xfce4.sh -y
 /etc/init.d/xrdp start
 adduser user
-apt-get install armitage zaproxy -y
-git clone https://github.com/ericpaulbishop/iptables_torify.git
-cd iptables_torify && chmod +x debian_install.sh && ./debian_install.sh -y
+apt-get install armitage zaproxy tor -y && tor
