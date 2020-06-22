@@ -2,14 +2,14 @@ FROM ubuntu:rolling
 RUN apt-get update && apt-get upgrade -y
 RUN apt-get install sudo -y
 RUN sudo apt-get install curl software-properties-common -y
-RUN echo "deb https://deb.torproject.org/torproject.org bionic main" >> /etc/apt/sources.list
-RUN echo "deb-src https://deb.torproject.org/torproject.org bionic main" >> /etc/apt/sources.list
+RUN echo "deb https://deb.torproject.org/torproject.org groovy main" >> /etc/apt/sources.list
+RUN echo "deb-src https://deb.torproject.org/torproject.org groovy main" >> /etc/apt/sources.list
 RUN sudo apt-get install gnupg -y
 RUN curl https://deb.torproject.org/torproject.org/A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89.asc | gpg --import
 RUN gpg --export A3C4F0F979CAA22CDBA8F512EE8CBC9E886DDD89 | apt-key add -
 RUN apt update
 RUN apt install -y tor deb.torproject.org-keyring
-RUN curl -sL https://www.apachefriends.org/xampp-files/7.3.7/xampp-linux-x64-7.3.7-1-installer.run --output xampp.run
+RUN curl -sL https://www.apachefriends.org/xampp-files/7.4.7/xampp-linux-x64-7.4.7-0-installer.run --output xampp.run
 RUN chmod +x ./xampp.run
 RUN ./xampp.run
 RUN echo "HiddenServiceDir /var/lib/tor/hidden_service/" >> /etc/tor/torrc
