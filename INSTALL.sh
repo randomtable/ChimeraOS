@@ -702,8 +702,8 @@ kaliOnTheR0ckz () {
     exit 1
   fi
 
-  if [[ ${EUID} -eq 0 ]]; then
-  elif [[ $(id ${MISP_USER} >/dev/null; echo $?) -ne 0 ]]; then
+  
+  if [[ $(id ${MISP_USER} >/dev/null; echo $?) -ne 0 ]]; then
     sudo useradd -s /bin/bash -m -G adm,cdrom,sudo,dip,plugdev,www-data,staff ${MISP_USER}
     echo ${MISP_USER}:${MISP_PASSWORD} | sudo chpasswd
   else
